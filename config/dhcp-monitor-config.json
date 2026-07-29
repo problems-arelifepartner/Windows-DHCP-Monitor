@@ -1,0 +1,22 @@
+{
+  "GlobalMaxLeases": 1000,
+  "DebounceMinutes": 5,
+  "PollIntervalSeconds": 60,
+  "Alerting": {
+    "Email": {
+      "Enabled": false,
+      "SmtpServer": "smtp.example.com",
+      "From": "dhcp-monitor@example.com",
+      "To": ["it-support@example.com"]
+    },
+    "Webhook": {
+      "Enabled": false,
+      "Url": "",
+      "Headers": {}
+    }
+  },
+  "PerScope": {
+    "10.0.0.0/24": 900,
+    "192.168.1.0/24": 500
+  }
+}
