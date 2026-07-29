@@ -1,4 +1,15 @@
-# Ignore temporary PowerShell files or local logs
-*.log
-*.tmp
+# Ignore runtime state and logs
+/state/
+/logs/
+/secrets.json
+*.ps1xml
+*.cache
+# Pester test results
+/TestResults/
 
+# PowerShell artifacts
+*.psd1
+*.psm1
+
+# VS Code
+.vscode/
